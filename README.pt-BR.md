@@ -64,3 +64,12 @@ Caveman (`full`):
 Caveman (`ultra`):
 
 > Reutiliza conexões do banco. Reduz preparação.
+
+Caveman (`grunt`), quando a tarefa foi concluída:
+
+> feito.
+
+Em trabalho parcial, o Grunt informa o estado real em vez de dizer que nada
+aconteceu. Exemplo:
+
+> 2 de 3 arquivos atualizados; o terceiro falhou.

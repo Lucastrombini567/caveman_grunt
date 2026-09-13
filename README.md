@@ -63,3 +63,12 @@ Caveman (`full`):
 Caveman (`ultra`):
 
 > Reuse DB connections. Reduce setup overhead.
+
+Caveman (`grunt`), when the task is complete:
+
+> done.
+
+For partial work, Grunt reports the actual state instead of claiming that
+nothing happened. Example:
+
+> 2 of 3 files updated; third failed.
