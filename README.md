@@ -24,6 +24,16 @@ Four intensity levels:
 For warnings, irreversible actions, ambiguous sequences, and clarification,
 Caveman returns to clear normal prose for that part.
 
+## Token savings
+
+Caveman usually saves output tokens by making replies shorter, but the gain
+depends on the model, task, and chosen mode. It does not promise a fixed rate.
+
+The related `caveman-compress` workflow measured about **46% fewer input
+tokens** when compressing instruction files. That figure applies to compressed
+files, not to every Caveman response. Measure your own sessions before using a
+savings figure for cost planning.
+
 ## How to use
 
 Copy this repository to your skills directory, preserving its structure:
@@ -64,11 +74,15 @@ Caveman (`ultra`):
 
 > Reuse DB connections. Reduce setup overhead.
 
-Caveman (`grunt`), when the task is complete:
+Request: “Update the README and tell me when it is done.”
+
+Caveman (`grunt`), after the update succeeds:
 
 > done.
 
-For partial work, Grunt reports the actual state instead of claiming that
-nothing happened. Example:
+Request: “Update these three files.”
+
+When two updates succeed and the third fails, Grunt reports the actual state
+instead of claiming that nothing happened:
 
 > 2 of 3 files updated; third failed.

@@ -24,6 +24,17 @@ Há quatro níveis:
 Em avisos, ações irreversíveis, sequências ambíguas ou pedidos de explicação,
 a Caveman usa linguagem normal e clara naquela parte da resposta.
 
+## Economia de tokens
+
+A Caveman tende a reduzir tokens de saída por tornar as respostas menores, mas
+o ganho depende do modelo, da tarefa e do modo escolhido. Ela não promete uma
+porcentagem fixa.
+
+O fluxo relacionado `caveman-compress` mediu cerca de **46% menos tokens de
+entrada** ao comprimir arquivos de instrução. Esse número vale para arquivos
+comprimidos, não para toda resposta no modo Caveman. Meça suas próprias sessões
+antes de usar uma estimativa para custo.
+
 ## Como instalar
 
 Copie os arquivos deste repositório para a pasta de skills, mantendo esta
@@ -65,11 +76,15 @@ Caveman (`ultra`):
 
 > Reutiliza conexões do banco. Reduz preparação.
 
-Caveman (`grunt`), quando a tarefa foi concluída:
+Pedido: “Atualize o README e me avise quando terminar.”
+
+Caveman (`grunt`), após a atualização concluir:
 
 > feito.
 
-Em trabalho parcial, o Grunt informa o estado real em vez de dizer que nada
-aconteceu. Exemplo:
+Pedido: “Atualize estes três arquivos.”
+
+Quando duas atualizações dão certo e a terceira falha, o Grunt informa o estado
+real em vez de dizer que nada aconteceu:
 
 > 2 de 3 arquivos atualizados; o terceiro falhou.
