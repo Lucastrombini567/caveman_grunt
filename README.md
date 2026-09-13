@@ -2,6 +2,8 @@
 
 Talk like smart caveman. Same brain, fewer tokens.
 
+[Leia em português](README.pt-BR.md)
+
 ## What it does
 
 Compress model responses to Caveman-style prose by dropping articles, filler,
