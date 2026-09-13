@@ -12,6 +12,11 @@ code blocks, error strings, and symbols. Results depend on model and workload;
 no aggregate reduction or quality-equivalence claim is published. The selected
 mode persists until changed or stopped.
 
+It only guides response style: it does not replace the model, change its tools,
+or reduce its available reasoning capability. Caveman is designed to preserve
+delivery quality while removing unnecessary wording; evaluate important
+workflows with your own model and task.
+
 Four intensity levels:
 
 | Level | What changes |
@@ -33,6 +38,11 @@ The related `caveman-compress` workflow measured about **46% fewer input
 tokens** when compressing instruction files. That figure applies to compressed
 files, not to every Caveman response. Measure your own sessions before using a
 savings figure for cost planning.
+
+## Development
+
+Developed with GPT-5.6 Astra using Ultracode, together with Fable 5.1
+Ultracode.
 
 ## How to use
 

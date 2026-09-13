@@ -12,6 +12,11 @@ técnicos, blocos de código, mensagens de erro e símbolos. O resultado depende
 do modelo e da tarefa; não há promessa de uma porcentagem fixa de economia. O
 modo escolhido permanece ativo até ser alterado ou desligado.
 
+Ela só orienta o estilo da resposta: não substitui o modelo, não altera suas
+ferramentas nem reduz sua capacidade de raciocínio disponível. A Caveman foi
+feita para preservar a qualidade da entrega enquanto remove palavras
+desnecessárias; avalie fluxos importantes com seu próprio modelo e tarefa.
+
 Há quatro níveis:
 
 | Nível | Mudança |
@@ -34,6 +39,11 @@ O fluxo relacionado `caveman-compress` mediu cerca de **46% menos tokens de
 entrada** ao comprimir arquivos de instrução. Esse número vale para arquivos
 comprimidos, não para toda resposta no modo Caveman. Meça suas próprias sessões
 antes de usar uma estimativa para custo.
+
+## Desenvolvimento
+
+Desenvolvida pelo GPT-5.6 Astra usando Ultracode, em conjunto com Fable 5.1
+Ultracode.
 
 ## Como instalar
 
